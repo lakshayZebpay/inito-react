@@ -1,0 +1,55 @@
+.predictionData {
+  max-width: 64rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 20rem;
+}
+
+.card {
+  padding: 2.05rem 2.05rem 3.5rem 2.05rem;
+  background-color: rgba(180, 228, 242, 0.45);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.mobileView {
+  position: relative;
+  background-color: #b4e4f2;
+
+  height: auto;
+  margin: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 28rem;
+}
+
+.predict {
+  display: flex;
+  gap: 6.75rem;
+  padding-right: 2.5rem;
+}
+.iphoneImg {
+  position: absolute;
+  opacity: 1;
+  transition: 0.3s all ease-in;
+  left: calc(5%);
+  bottom: 0;
+  width: 90%;
+  height: 100%;
+  /* padding-left: 3.5rem;
+  padding-right: 3.5rem; */
+}
+.iphoneImg.hide {
+  opacity: 0;
+}
+
+.predictContent {
+  text-align: left;
+}
+.chart {
+  text-align: left;
+  display: flex;
+  gap: 5px;
+}

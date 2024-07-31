@@ -1,0 +1,30 @@
+.section {
+  position: relative;
+}
+
+.contentArea1 {
+  position: relative;
+  background-image: url("../../public/images/png/header_bg_01.png");
+  width: 100%;
+  background-size: cover;
+  min-height: 53.125rem;
+  background-repeat: round;
+  background-position-y: -25.5rem;
+  background-repeat: no-repeat;
+}
+
+.imageContent {
+  max-width: 64rem;
+  margin: auto;
+}
+.contentArea2 {
+  background-color: #ffff;
+}
+.contentArea3 {
+  background-color: #e1f4fa;
+  min-height: 133.125rem;
+}
+.contentArea4 {
+  background-color: #ffff;
+  min-height: 120.125rem;
+}

@@ -1,0 +1,12 @@
+.infoContent {
+  max-width: 64rem;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.infoWrapper {
+  margin: auto;
+  width: 36rem;
+}

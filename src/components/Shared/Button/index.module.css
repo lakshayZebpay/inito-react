@@ -1,0 +1,46 @@
+.small {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1rem;
+  text-align: center;
+  padding: 0.625rem 1.5rem;
+}
+
+.medium {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  padding: 0.75rem 2.1rem;
+  transition: all ease 0.5s;
+  font-weight: 600;
+}
+
+.large {
+  font-size: 1rem;
+  line-height: 1.218rem;
+  padding: 1rem 2rem;
+  transition: all ease 0.5s;
+  font-weight: 600;
+}
+
+.primary {
+  align-self: center;
+  border-radius: 1.625rem;
+  background-color: #1f94aa;
+  color: #ffff;
+}
+.primary:hover {
+  background-color: #047a91;
+}
+.secondary {
+  align-self: center;
+  border-radius: 1.625rem;
+  border-color: #1f94aa;
+  color: #1f94aa;
+}
+
+.tertiary {
+  align-self: center;
+  border-radius: 1.625rem;
+  background-color: #1f94aa;
+  color: #ffff;
+}

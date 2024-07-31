@@ -1,0 +1,126 @@
+/* mobile view start from width px 650 */
+.footer {
+  width: 100vw;
+  background-color: #112d35;
+  height: max-content;
+}
+.footerControl {
+  display: flex;
+  clear: both;
+  max-width: 64rem;
+  margin: auto;
+  justify-content: space-between;
+  padding: 3.1875rem 0rem 6.25rem;
+}
+
+.sitemap {
+  display: flex;
+
+  gap: 3.125rem;
+}
+.sitemapContact {
+  display: contents;
+}
+
+.tabList {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+}
+.listHeading {
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.1875rem;
+}
+
+.listElement {
+  color: #a0abae;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.1875rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.875rem;
+  justify-content: flex-end;
+}
+
+.link {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.copyRightContainer {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem 0rem;
+}
+.copyRightInfo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 64rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.copyrightContent {
+  color: #869194;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  text-align: right;
+}
+
+@media only screen and (min-width: 41rem) and (max-width: 64rem) {
+  .footerControl {
+    margin: 0 4rem;
+  }
+  .copyRightInfo {
+    margin: 0 4rem;
+  }
+
+  .sitemap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .sitemapContact {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3.125rem;
+  }
+  .links {
+    gap: 4rem;
+  }
+  .tabList {
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 41rem) {
+  .links {
+    gap: 3.5rem;
+  }
+  .tabList {
+    display: none;
+  }
+  .footerControl {
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .sitemap {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .sitemapContact {
+    display: none;
+  }
+  .copyRightInfo {
+    margin: 0 4rem;
+  }
+}

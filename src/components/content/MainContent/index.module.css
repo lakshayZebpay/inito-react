@@ -1,0 +1,79 @@
+.mainContent {
+  width: 64rem;
+  padding-top: 5rem;
+  display: flex;
+  gap: 5rem;
+  margin: auto;
+  position: relative;
+}
+.content {
+  margin-top: 8em;
+  width: 50%;
+}
+
+.starGroup {
+  display: flex;
+  gap: 0.875rem;
+}
+.stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+}
+.starContent {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+.mainHeading {
+  margin: 0.5em 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+}
+
+.images {
+  position: absolute;
+  right: -8rem;
+  top: 0;
+}
+.imageWeb {
+  display: flex;
+}
+.imageMobile {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1220px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .mainContent {
+    margin: 0rem 1.8rem;
+  }
+  .content {
+    margin-top: 0em;
+    width: 50%;
+    text-align: center;
+  }
+  .starGroup {
+    justify-content: center;
+  }
+
+  .imageWeb {
+    display: none;
+  }
+  .imageMobile {
+    display: flex;
+  }
+}

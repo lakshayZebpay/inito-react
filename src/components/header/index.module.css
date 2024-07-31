@@ -1,0 +1,144 @@
+/* mobile view start from width px 650 */
+.header {
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+.headerControl {
+  display: flex;
+  max-width: 64rem;
+  margin: auto;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.companyLogo {
+  display: flex;
+  align-self: center;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+.navElements {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.dropDownNav {
+  height: 0px;
+  transform: translateY(0%) scaleY(0);
+}
+.tabsList {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 3.125rem;
+}
+
+.tab {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #112d35;
+}
+.activeTab {
+  color: #1f94aa;
+}
+
+.tab:hover {
+  color: #1f94aa;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+.overlay {
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50 !important;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+.overlay.show {
+  opacity: 1;
+}
+@media only screen and (min-width: 41rem) and (max-width: 64rem) {
+  .headerControl {
+    margin: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 41rem) {
+  .hamburger {
+    display: flex;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .headerControl {
+    margin: 0 1.25rem;
+    height: 3.75rem;
+  }
+  .tabsList {
+    display: none;
+    opacity: 0;
+  }
+
+  .dropDownNav {
+    height: 0px;
+    transform: translateY(0%) scaleY(1);
+    transition: 0.1s all ease-in;
+    opacity: 0;
+  }
+  .dropDownNav.show {
+    padding: 1em 1.25rem;
+    height: auto;
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+  .tabsListMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .tab {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: center;
+    padding: 0.5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #112d35;
+  }
+  .overlay {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 50 !important;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+  }
+  .overlay.show {
+    opacity: 1;
+  }
+}
