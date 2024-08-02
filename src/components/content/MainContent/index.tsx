@@ -22,16 +22,18 @@ const MainContent: React.FC<MainContentProps> = ({ isMobile }) => {
         <h1 className={styles.mainHeading}>
           Track your fertility hormones at home, in 10 minutes
         </h1>
-        <h6>
+        <h6 className={styles.mainDescription}>
           Get accurate results of
           <span style={{ fontWeight: 700 }}>
             Estrogen, LH, Progesterone metabolite PdG and FSH
           </span>{" "}
           with Inito, the all-in-one, FDA-registered fertility monitor.
         </h6>
-        <Button size="large" onClick={() => {}} buttonType="primary">
-          How does Inito work?
-        </Button>
+        <div className={styles.button}>
+          <Button size="large" onClick={() => {}} buttonType="primary">
+            How does Inito work?
+          </Button>
+        </div>
       </div>
       <div className={styles.images}>
         <img

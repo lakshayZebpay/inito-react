@@ -10,3 +10,19 @@
   margin: auto;
   width: 36rem;
 }
+
+@media only screen and (max-width: 650px) {
+  .infoContent {
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  h1 {
+    line-height: 1.8rem !important;
+  }
+  .infoWrapper {
+    margin: auto;
+    width: calc(100% - 4rem);
+    padding: 0rem 2rem;
+  }
+}

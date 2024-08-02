@@ -1,0 +1,52 @@
+.cardContent {
+  max-width: 64rem;
+
+  margin: auto;
+  text-align: center;
+  margin-top: 7rem;
+  position: relative;
+}
+
+.infoWrapper {
+  margin: auto;
+  width: 36rem;
+}
+
+.comments {
+  /* position: absolute; */
+  background-color: #ffff;
+  padding: 2.56rem;
+  border-radius: 1.25rem;
+  top: -11.25rem;
+  box-shadow: 4px 4px 14px 0px rgba(18, 45, 53, 0.12);
+  text-align: left;
+}
+
+.calender {
+  position: absolute;
+  right: -60px;
+  top: -60px;
+}
+
+.heading {
+  color: rgba(31, 148, 170, 1);
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.irregular {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 4rem;
+  padding-right: 3rem;
+  text-align: left;
+  text-wrap: pretty;
+  text-align: left;
+}
+
+@media only screen and (max-width: 650px) {
+  .cardContent {
+    display: none;
+  }
+}

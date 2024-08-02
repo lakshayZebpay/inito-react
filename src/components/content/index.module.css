@@ -9,7 +9,6 @@
   background-size: cover;
   min-height: 53.125rem;
   background-repeat: round;
-  background-position-y: -25.5rem;
   background-repeat: no-repeat;
 }
 
@@ -27,4 +26,29 @@
 .contentArea4 {
   background-color: #ffff;
   min-height: 120.125rem;
+}
+
+.imageWeb {
+  display: flex;
+}
+.imageMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .contentArea1 {
+    min-height: 40.125rem;
+  }
+  .imageWeb {
+    display: none;
+  }
+  .imageMobile {
+    display: flex;
+  }
+  .imageContent {
+    margin-top: 3rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 }

@@ -59,21 +59,52 @@
 
 @media only screen and (max-width: 650px) {
   .mainContent {
-    margin: 0rem 1.8rem;
+    display: block;
+    width: 100%;
+  }
+  h1 {
+    line-height: 1.8rem !important;
   }
   .content {
     margin-top: 0em;
-    width: 50%;
+    width: 100%;
     text-align: center;
   }
   .starGroup {
     justify-content: center;
+    padding: 1rem 1.8rem;
+    padding-top: 2rem;
   }
-
+  .mainHeading {
+    padding: 0rem 1.8rem;
+    width: calc(100% - 3.6rem);
+    line-height: 1.8rem !important;
+    margin-bottom: 2rem;
+  }
+  .mainDescription {
+    padding: 0rem 1.8rem;
+    width: calc(100% - 3.6rem);
+    line-height: 1.8rem !important;
+    text-align: left;
+  }
   .imageWeb {
     display: none;
   }
   .imageMobile {
     display: flex;
+    width: "100%";
+  }
+  .images {
+    background-color: #c3f2ff;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .button {
+    position: absolute;
+    bottom: -1.5rem;
+    z-index: 5;
+    margin: auto;
+    width: 100%;
   }
 }
