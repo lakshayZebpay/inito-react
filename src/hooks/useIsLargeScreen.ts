@@ -9,7 +9,7 @@ const useIsLargeScreen = () => {
     setIsLargeScreen(window.matchMedia("(min-width: 1024px)").matches);
 
     // I write this into a function for better visibility
-    const handleResize = (e) => {
+    const handleResize = (e: any) => {
       setIsLargeScreen(e.matches);
     };
 

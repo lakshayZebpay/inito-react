@@ -8,7 +8,7 @@ function useIsMobileScreen() {
     setIsLargeScreen(window.matchMedia("(max-width: 650px)").matches);
 
     // I write this into a function for better visibility
-    const handleResize = (e) => {
+    const handleResize = (e: any) => {
       setIsLargeScreen(e.matches);
     };
 
