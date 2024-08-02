@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 
 function useIsMobileScreen() {
   const [isMobileScreen, setIsLargeScreen] = useState(false);
